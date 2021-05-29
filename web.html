@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB_TEXT</title>
+    <script src ="https://use.fontawesome.com/77aaba30bc.js" > </script>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .menu{
+            background-color: #ccc;
+        }
+        .menu .head_search{
+            display: flex;
+        }
+        .menu .head_search button,.menu .head_search input{
+            border:none;
+            background-color: #fff;
+            padding: 5px 10px;
+        }
+        .menu .head_search button:focus,.menu .head_search input:focus{
+            outline: none;
+        }
+
+        .menu .head_search button{
+            border-radius: 0 200px 200px 0;
+            display: flex;
+        }
+        .menu .head_search input{
+            border-radius: 200px 0 0 200px;
+            background-color: #000;
+        }
+        .menu h2{
+            color: #fff;
+        }
+        input[type="checkbox"]:checked ~ label .bar {
+            background-color: #fff;
+        }       
+        .bar {
+            display: block;
+            background-color: #fff;
+            width: 30px;
+            height: 3px;
+            border-radius: 5px;
+            margin: 5px auto;
+            transition: background-color 0.4s ease-in, transform 0.4s ease-in,width 0.4s ease-in;
+        }
+        input[type="checkbox"] {
+            display: none;
+        }
+        input[type="checkbox"]:checked ~ aside .aside-left {
+            transform: translateY(0%);
+        }
+        input[type="checkbox"]:checked ~ aside .aside-right {
+            transform: translateX(0%);
+        }
+        input[type="checkbox"]:checked ~ label .bar {
+            background-color: #fff;
+        }
+        input[type="checkbox"]:checked ~ label .top {
+            -webkit-transform: translateY(0px) rotateZ(45deg);
+            -moz-transform: translateY(0px) rotateZ(45deg);
+            -ms-transform: translateY(0px) rotateZ(45deg);
+            -o-transform: translateY(0px) rotateZ(45deg);
+            transform: translateY(0px) rotateZ(45deg);
+        }
+        input[type="checkbox"]:checked ~ label .bottom {
+            -webkit-transform: translateY(-15px) rotateZ(-45deg);
+            -moz-transform: translateY(-15px) rotateZ(-45deg);
+            -ms-transform: translateY(-15px) rotateZ(-45deg);
+            -o-transform: translateY(-15px) rotateZ(-45deg);
+            transform: translateY(-15px) rotateZ(-45deg);
+        }
+        input[type="checkbox"]:checked ~ label .middle {
+            width: 0;
+        }
+        label {
+            display: inline-block;
+            background-color: #000;
+            cursor: pointer;
+            margin: 10px;
+            z-index: 3;
+            position: fixed;
+            border-radius: 15px 15px 15px 15px;
+            width: 100px;
+            height: 100px;
+        }
+
+        .aside-left {
+            display: none;
+            width: 40%;
+            left: 0;
+            background-color: rgba(255,255,255,.6);
+            -webkit-transform: translateY(-100%);
+            -moz-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+            -o-transform: translateY(-100%);
+            transform: translateY(-100%);
+            transition: transform 0.4s ease-in-out;
+        }
+
+        input[type="checkbox"]:checked ~ aside .aside-left {
+            transform: translateY(0%);
+        }
+
+        .aside-content {
+            margin-top: 150px;
+            padding: 0 40px;
+            position: relative;
+            color: white;
+            text-align: center;
+        }
+
+        .aside-section {
+            top: 0;
+            bottom: 0;
+            position: absolute;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="menu">
+        <input type="checkbox" id="myInput">
+        <label for="myInput">
+            <span class="bar top"></span>
+            <span class="bar middle"></span>
+            <span class="bar bottom"></span>
+        </label>
+        
+        <form class="header_search">
+            <input type="search" name="" id="">
+            <button><i class="fa fa-search"></i></button>
+        </form>
+        <h2>個人資訊</h2>
+    </div>
+
+
+    <aside>
+        <div class="aside-section aside-left">
+          <div class="aside-content">
+            <p> 請輸入地點1 </p>
+            <input type="text" id="id1">
+            <button class="button"> 確認 </button>
+
+            <p> 請輸入地點2 </p>
+            <input type="text" id="id1">
+            <button class="button"> 確認 </button>
+
+            <p> 請輸入地點3 </p>
+            <input type="text" id="id1">
+            <button class="button"> 確認 </button>
+          </div>
+        </div>
+    </aside>
+
+
+    <div class="banner"></div>
+</body>
+</html>
