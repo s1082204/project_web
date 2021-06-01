@@ -172,9 +172,10 @@
 }
 .side-menu input{
     display: block;
-    margin: 10px;
+    margin: auto;
     line-height:  20px;
     height: 20px;
+    width: auto
 }
 
 
@@ -213,6 +214,37 @@
     .main-header .header_search button{
         display: none;
     }
-    
+    .overlay {
+        visibility: hidden;
+        position: absolute;
+        background: #87bbb6;
+        width: 100%;
+        opacity: 0;
+        transition: opacity 0.35s,height 0.35s;         
+    }
+    .overlay.open {
+        opacity: 0.5;
+        visibility: visible;
+        height: 86%;   
+    }
+    .overlay.open .overlay_text,
+    .overlay.open .overlay_text h1,
+    .overlay.open .overlay_text h3,
+    .overlay.open .overlay_text input,
+    .overlay.open .overlay_text button,
+    .side-menu{
+        display: none;
+    }
+    .main-header label img {
+        height: 15px;
+    }
+    .main-header .vertical img {
+        height: 40px;
+    }
+    .main-header .icon img{
+        width: 40px;
+        height: 40px;
+    }
+
 }
 
