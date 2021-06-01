@@ -103,20 +103,16 @@
 .overlay.open {
     opacity: 0.5;
     visibility: visible;
-    height: auto;
-    display:  table;    
+    height: 80%;   
 }
 .overlay.open .overlay_text{
     color: #fff;
-    display:table-cell;
-    vertical-align:middle;
     padding: 0 600px 0 550px;/**/ 
-    line-height:  20px;
 }
 .overlay.open .overlay_text h1{
     text-align: center;
     font-size: 52px;
-    margin: 40px;
+    margin: 100px 0 40px 0;
 }
 .overlay.open .overlay_text h3{
     font-size: 24px;
