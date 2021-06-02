@@ -103,19 +103,21 @@
 .overlay.open {
     opacity: 0.5;
     visibility: visible;
-    height: 90%;   
+    height: auto;   
 }
 .overlay.open .overlay_text{
     color: #fff;
-    padding: 0 600px 0 550px;
+    padding: 0 50% 0 40%;
 }
 .overlay.open .overlay_text h1{
     text-align: center;
-    font-size: 52px;
-    margin: 100px 0 40px 0;
+    font-size: 8vmin;
+    width: 400px;
+    margin: 100px 0 0px 0;
 }
 .overlay.open .overlay_text h3{
     font-size: 24px;
+    width: 400px;
     margin: 30px 0px 10px 0px;
 }
 .overlay.open .overlay_text input{
@@ -123,6 +125,7 @@
     height: 30px; 
 }
 .overlay.open .overlay_text button{
+    display: block;
     margin: 30px 0 0 0;
     width: 125px;
     height: 31px;
@@ -134,9 +137,8 @@
 /**/
 .side-menu{
     position: relative;
-    top: 1px;
     width: 400px;
-    height: 650px;
+    height: 640px;
     border-radius: 0 320px 320px 0;
     margin: 0;
     background-color: #87bbb6;
@@ -180,32 +182,8 @@
 
 
 /*rwd*/
-/*1048*/
+/*1048
 @media screen and (max-width: 1048px) {
-    .main-header .right  p,
-    .main-header .left  p,
-    .main-header .logo img,
-    .main-header .icon1 img,
-    .main-header .header_search,
-    .main-header .header_search button{
-        display: none;
-    }
-    
-}
-/*900*/
-@media screen and (max-width: 900px) {
-    .main-header .right  p,
-    .main-header .left  p,
-    .main-header .logo img,
-    .main-header .icon1 img,
-    .main-header .header_search,
-    .main-header .header_search button{
-        display: none;
-    }
-    
-}
-/*769*/
-@media screen and (max-width: 769px) {
     .main-header .right  p,
     .main-header .left  p,
     .main-header .logo img,
@@ -245,6 +223,87 @@
         width: 40px;
         height: 40px;
     }
-
+    
 }
+900
+@media screen and (max-width: 900px) {
+    .main-header .right  p,
+    .main-header .left  p,
+    .main-header .logo img,
+    .main-header .icon1 img,
+    .main-header .header_search,
+    .main-header .header_search button{
+        display: none;
+    }
+    .overlay {
+        visibility: hidden;
+        position: absolute;
+        background: #87bbb6;
+        width: 100%;
+        opacity: 0;
+        transition: opacity 0.35s,height 0.35s;         
+    }
+    .overlay.open {
+        opacity: 0.5;
+        visibility: visible;
+        height: 86%;   
+    }
+    .overlay.open .overlay_text,
+    .overlay.open .overlay_text h1,
+    .overlay.open .overlay_text h3,
+    .overlay.open .overlay_text input,
+    .overlay.open .overlay_text button,
+    .side-menu{
+        display: none;
+    }
+    .main-header label img {
+        height: 15px;
+    }
+    .main-header .vertical img {
+        height: 40px;
+    }
+    .main-header .icon img{
+        width: 40px;
+        height: 40px;
+    }
+    
+}
+769
+@media screen and (max-width: 1024px) {
+    .main-header .right  p,
+    .main-header .left  p,
+    .main-header .logo img,
+    .main-header .icon1 img,
+    .main-header .header_search,
+    .main-header .header_search button{
+        display: none;
+    }
+    .overlay {
+        visibility: hidden;
+        position: absolute;
+        background: #87bbb6;
+        width: 100%;
+        opacity: 0;
+        transition: opacity 0.35s,height 0.35s;         
+    }
+    .overlay.open {
+        opacity: 0.5;
+        visibility: visible;
+        height: 90%;   
+    }
+    .side-menu{
+        display: none;
+    }
+    .main-header label img {
+        height: 15px;
+    }
+    .main-header .vertical img {
+        height: 40px;
+    }
+    .main-header .icon img{
+        width: 40px;
+        height: 40px;
+    }
+
+}*/
 

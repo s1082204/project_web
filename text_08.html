@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+    <head>
+        <meta charset="UTF-8">
+        <title>web</title>
+        <link rel='stylesheet' href='https://daneden.github.io/animate.css/animate.min.css'><link rel="stylesheet">
+
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                list-style: none;
+            }
+            .main-header{
+                background-color: #000;
+                width: 100%;
+                height: 20%;
+                display: flex;
+            }
+            .main-header .container .left,
+            .main-header .container .right{
+                display: flex;
+            }
+            .main-header .left label img{
+                width: 40px;
+                height: 30px;
+            }
+            .main-header .left .vertical img{
+                display: flex;
+                height: 10px;
+            }
+            .main-header .left .logo img,
+            .main-header .left .logo p{
+                display: none;
+            }
+            .main-header .container .right{
+                display: none;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+
+    <!--menu-->
+    <header class="main-header">
+        <div class="container">
+            
+            <div class="left">
+                <!--side-menu-->
+                <label for="side-menu-switch">
+                    <img src="選單.png">
+                </label>
+                <!--垂直線-->
+                <div class="vertical">
+                    <img src="垂直線.png" id="logo">
+                </div>
+                <!--contact us-->
+                <a href="text_04.html" class="logo">
+                    <img src="logo_1.png" alt="logo" id="logo">
+                </a>
+                <p>contact us</p>
+            </div>
+
+            <div class="right">
+                <!--search-->
+                <form class="header_search">
+                    <input type="search" placeholder="請輸入關鍵字">
+                    <button><i class="fa fa-search"></i></button>
+                </form>
+
+                <!--login-->
+                <a class="icon" id="toggle">
+                    <img src="user_2.png" alt="會員登入" id="login">
+                </a>
+                <p>login</p>       
+            </div>
+        </div>    
+    </header>
+
+
+
+
+    <!--home_screen-->
+    <div class="home_screen">
+    </div>
+
+
+
+
+    <!--overlay-->
+    <div class="overlay" id="overlay">
+
+        <div class="overlay_text">
+            <h1>Member login</h1>
+            <h3>請輸入帳號</h3>
+            <input type="text" id="overlay-test">
+            <h3>請輸入密碼</h3>
+            <input type="password" id="overlay-pw">
+            <br>
+            <button>Member login</button>
+            <button>忘記密碼</button>
+        </div>
+        
+    </div>
+
+
+
+
+    <!--Hidden area-->
+    <div class="Hidden-area" id="Hidden-area">
+
+    </div>
+
+
+
+    <!--side-menu-->
+    <input type="checkbox" name="" id="side-menu-switch">
+    <div class="side-menu">
+        <label for="side-menu-switch">
+            <i class="fa fa-angle-left"></i>
+        </label>
+        <input type="text" placeholder="請輸入地點1" id="side_text1">
+        <input type="text" placeholder="請輸入地點2" id="side_text2">
+        <input type="text" placeholder="請輸入地點3" id="side_text3">
+    </div>
+
+
+
+    </body>
+    <script src ="https://use.fontawesome.com/77aaba30bc.js" > </script>
+</html>
