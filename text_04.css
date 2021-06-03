@@ -182,7 +182,7 @@
 
 
 /*rwd*/
-/*1048
+
 @media screen and (max-width: 1048px) {
     .main-header .right  p,
     .main-header .left  p,
@@ -225,7 +225,7 @@
     }
     
 }
-900
+
 @media screen and (max-width: 900px) {
     .main-header .right  p,
     .main-header .left  p,
@@ -268,7 +268,7 @@
     }
     
 }
-769
+
 @media screen and (max-width: 1024px) {
     .main-header .right  p,
     .main-header .left  p,
@@ -305,5 +305,5 @@
         height: 40px;
     }
 
-}*/
+}
 
