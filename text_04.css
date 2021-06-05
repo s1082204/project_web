@@ -103,36 +103,59 @@
 .overlay.open {
     opacity: 0.5;
     visibility: visible;
-    height: auto;   
+    height: 90%;  
 }
 .overlay.open .overlay_text{
-    color: #fff;
-    padding: 0 50% 0 40%;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left:-200px;
+    margin-top:-200px;
 }
 .overlay.open .overlay_text h1{
+    color: #fff;
+    font-size: 52px;
     text-align: center;
-    font-size: 8vmin;
-    width: 400px;
-    margin: 100px 0 0px 0;
 }
 .overlay.open .overlay_text h3{
+    color: #fff;
     font-size: 24px;
-    width: 400px;
-    margin: 30px 0px 10px 0px;
+    text-align: left;
+    margin: 20px 0 10px 0;
+}
+.overlay.open .overlay_text p{
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
+    margin: 10px 0 5px 0;
+}
+.overlay.open .overlay_text a img{
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    margin: 10px;
 }
 .overlay.open .overlay_text input{
-    width: 400px;
-    height: 30px; 
+    width: 390px;
+    height: 25px;
 }
 .overlay.open .overlay_text button{
-    display: block;
-    margin: 30px 0 0 0;
+    margin: 20px 50px 0 70px;
     width: 125px;
     height: 31px;
+    font-size: 18px;
     background-color: rgb(255, 255, 255);
     border-radius: 10px 10px 10px 10px;
     color: rgb(0, 0, 0);
 }
+.overlay.open .overlay_text a{
+    font-size: 18px;
+    color: rgb(20, 20, 20);
+    text-decoration:none;
+}
+
 
 /**/
 .side-menu{
@@ -181,129 +204,4 @@
 }
 
 
-/*rwd*/
-
-@media screen and (max-width: 1048px) {
-    .main-header .right  p,
-    .main-header .left  p,
-    .main-header .logo img,
-    .main-header .icon1 img,
-    .main-header .header_search,
-    .main-header .header_search button{
-        display: none;
-    }
-    .overlay {
-        visibility: hidden;
-        position: absolute;
-        background: #87bbb6;
-        width: 100%;
-        opacity: 0;
-        transition: opacity 0.35s,height 0.35s;         
-    }
-    .overlay.open {
-        opacity: 0.5;
-        visibility: visible;
-        height: 86%;   
-    }
-    .overlay.open .overlay_text,
-    .overlay.open .overlay_text h1,
-    .overlay.open .overlay_text h3,
-    .overlay.open .overlay_text input,
-    .overlay.open .overlay_text button,
-    .side-menu{
-        display: none;
-    }
-    .main-header label img {
-        height: 15px;
-    }
-    .main-header .vertical img {
-        height: 40px;
-    }
-    .main-header .icon img{
-        width: 40px;
-        height: 40px;
-    }
-    
-}
-
-@media screen and (max-width: 900px) {
-    .main-header .right  p,
-    .main-header .left  p,
-    .main-header .logo img,
-    .main-header .icon1 img,
-    .main-header .header_search,
-    .main-header .header_search button{
-        display: none;
-    }
-    .overlay {
-        visibility: hidden;
-        position: absolute;
-        background: #87bbb6;
-        width: 100%;
-        opacity: 0;
-        transition: opacity 0.35s,height 0.35s;         
-    }
-    .overlay.open {
-        opacity: 0.5;
-        visibility: visible;
-        height: 86%;   
-    }
-    .overlay.open .overlay_text,
-    .overlay.open .overlay_text h1,
-    .overlay.open .overlay_text h3,
-    .overlay.open .overlay_text input,
-    .overlay.open .overlay_text button,
-    .side-menu{
-        display: none;
-    }
-    .main-header label img {
-        height: 15px;
-    }
-    .main-header .vertical img {
-        height: 40px;
-    }
-    .main-header .icon img{
-        width: 40px;
-        height: 40px;
-    }
-    
-}
-
-@media screen and (max-width: 1024px) {
-    .main-header .right  p,
-    .main-header .left  p,
-    .main-header .logo img,
-    .main-header .icon1 img,
-    .main-header .header_search,
-    .main-header .header_search button{
-        display: none;
-    }
-    .overlay {
-        visibility: hidden;
-        position: absolute;
-        background: #87bbb6;
-        width: 100%;
-        opacity: 0;
-        transition: opacity 0.35s,height 0.35s;         
-    }
-    .overlay.open {
-        opacity: 0.5;
-        visibility: visible;
-        height: 90%;   
-    }
-    .side-menu{
-        display: none;
-    }
-    .main-header label img {
-        height: 15px;
-    }
-    .main-header .vertical img {
-        height: 40px;
-    }
-    .main-header .icon img{
-        width: 40px;
-        height: 40px;
-    }
-
-}
 
