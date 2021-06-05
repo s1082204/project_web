@@ -35,10 +35,13 @@
     height: 40px;
     padding: 5px;
 }
-.main-header .icon img,.main-header .icon1 img{
-    margin: 0 20px 0 20px;
-    width: 50px;
-    height: 50px;
+.main-header .icon,.main-header .icon2 {
+    display: flex;
+}
+.main-header .icon img,.main-header .icon2 img{
+    margin: 0 10px 0 0px;
+    width: 40px;
+    height:40px;
 }
 .main-header .left  p{
     text-decoration: none;
@@ -83,9 +86,7 @@
 }
 .main-header .header_search button{
     border-radius: 0 150px 150px 0;
-    border-left: 2px dashed #87bbb6;
-    
-    
+    border-left: 2px dashed #87bbb6;  
 }
 .main-header .header_search input{
     border-radius:  150px 0 0 150px ;
@@ -101,7 +102,7 @@
     transition: opacity 0.35s,height 0.35s;         
 }
 .overlay.open {
-    opacity: 0.5;
+    opacity: 0.7;
     visibility: visible;
     height: 90%;  
 }
@@ -129,6 +130,7 @@
     color: #fff;
     font-size: 18px;
     text-align: left;
+    display: flex;
     margin: 10px 0 5px 0;
 }
 .overlay.open .overlay_text a img{
@@ -203,5 +205,12 @@
     width: auto
 }
 
-
+@media screen and (max-width: 960px) {
+    .main-header .header_search,
+    .main-header .header_search button,
+    .main-header .container .left p,
+    .main-header .container .right p {
+        display: none;
+    }
+}
 
