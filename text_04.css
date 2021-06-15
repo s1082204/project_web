@@ -257,12 +257,7 @@
     .main-header .header_search button,
     .main-header .container .left p,
     .main-header .container .right p,
-     .side-menu label,
-    .side-menu input,
-    .side-menu form input,
-    #點點,
-    #submit,
-    #下箭頭{
+    .side-menu label{
         display: none;
     }
     /*側邊選單_區域外*/
@@ -282,6 +277,30 @@
     /*側邊選單_區域內(向下彈出顯示)*/
     #side-menu-switch:checked + .side-menu{
         transform: translateY(0%);
+    }
+    .side-menu input{
+        margin: 90px auto  0px auto;
+        position: relative;
+        width: 80%;
+        height: 5%;
+        text-align: center;
+    }
+    #點點{
+        height: 30px;
+        width: 7px;
+        margin: 30px 0px 20px 50%;
+    }
+    .side-menu form input{
+        margin: 10px auto  30px auto;
+        position: relative;
+    }
+    #submit{
+        margin: 10px auto  30px auto;
+        position: relative;
+    }
+    #下箭頭{
+        margin: 10px auto  30px auto;
+        position: relative;
     }
 }
 
