@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>410822042</title>
+    <script>
+
+        var index;
+        var k = 0;
+        var c = 0;          //答對題數
+        var fal = 0;        //答錯題數
+        var jump = 6-c-fal; //跳過題數
+        
+        var index_boolean;
+        
+        var text = new Array(5);
+        var arr_1 = new Array(5);
+        
+        var question = new Array(5);
+        question[0] = "請問貓的英文是??";
+        question[1] = "請問狗的英文是??";
+        question[2] = "請問熊的英文是??";
+        question[3] = "請問魚的英文是??";
+        question[4] = "請問沙發的英文是?";
+
+        var anwser = new Array(5);
+        anwser[0] = "cat";
+        anwser[1] = "dog";
+        anwser[2] = "bear";
+        anwser[3] = "fish";
+        anwser[4] = "sofa";
+        
+        for(var i = 0 ; i<5 ; i++ ){
+        //
+           index = Math.floor(Math.random() * question.length);
+           text[i] = question.splice(index,1); 
+           arr_1[i] = anwser.splice(index,1);
+
+        }
+
+       var currans = "apple";
+        
+       function check(){
+            var a = document.getElementById("input");
+            var m = document.getElementById("id2");
+//
+                if(a.value.toLowerCase() == currans){
+                    m.innerHTML = "恭喜答對了";
+                    index_boolean = true;
+                    c ++;
+                    jump--;
+                }
+                else{
+                    m.innerHTML = "抱歉答錯了";
+                    index_boolean = false;
+                    fal ++;
+                    jump--;
+                }
+                document.getElementById('Button').style.visibility = 'hidden'; 
+        }
+
+        function next(){   
+            
+            var a = document.getElementById("input");
+            var m = document.getElementById("id2");
+            var q = document.getElementById("quiz");
+            
+        //
+            if(index_boolean == true){
+                document.getElementById('input').value = "";
+
+                if(k <= 5){
+                    q.innerHTML = text[k];
+                    currans = arr_1[k];
+                    m.innerHTML = "<br/>"; 
+                    k++;
+                }
+
+                if(k == 6){
+                    document.write("恭喜完成測驗<br/>");
+                    document.write("答對題數:"+c+"<br/>");
+                    document.write("答錯題數:"+fal+"<br/>");
+                    document.write("跳過題數:"+jump+"<br/>");
+                }
+            }else{
+                document.getElementById('input').value = "";
+
+                if(k <= 5){
+                    q.innerHTML = text[k];
+                    currans = arr_1[k];
+                    m.innerHTML = "<br/>"; 
+                    k++;
+                }
+
+                if(k == 6){
+                    document.write("恭喜完成測驗<br/>");
+                    document.write("答對題數:"+c+"<br/>");
+                    document.write("答錯題數:"+fal+"<br/>");
+                    document.write("跳過題數:"+jump+"<br/>");
+                }
+            }
+            document.getElementById('Button').style.visibility = 'visible';
+        }
+    </script>
+</head>
+
+
+
+<body>
+    <div id="quiz">請問蘋果的英文是??</div>
+    <input id="input" type="text" />
+    <div id="id2"><br/></div>
+    <button id = "Button" onclick="check();">確認</button>   
+    <button onclick="next();">下一題</button> 
+<img width=10 height=10 src="facebook.png"  name="x1"> 
+<SELECT onChange="document.x1.src=options[selectedIndex].value"> 
+<option value="images/m04.jpg" alt="1">油菜花開</option> 
+<option value="images/m03.jpg" alt="2">往事如茶</option> 
+<option value="google.png" alt="3">野花綻放</option> 
+<option value="facebook.png" alt="4">紅葉傳情</option> 
+</SELECT> 
+<br>
+</body>
+</html>

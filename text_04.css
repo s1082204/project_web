@@ -229,7 +229,7 @@
     height: 25px;
     width: 200px;
     font-size: 14px;
-    margin: 25px 0px 0px 50px ;
+    margin: 25px 0px 0px 20px ;
     color: #fff;
 }
 #點點{
@@ -246,9 +246,67 @@
     color: black;
 }
 #下箭頭{
+    background-color: transparent;
     color:#fff;
     font-size: 40px;
     margin: 40px 0px 0px 120px;
+    width: 30px;
+    height: 50px;
+    border: none;
+}
+#上箭頭{
+    background-color: transparent;
+    color:#fff;
+    font-size: 40px;
+    margin: 40px 0px 0px 120px;
+    width: 30px;
+    height: 0px;
+    border: none;
+}
+.choose{
+    margin: 70px 0px 20px 20px ;
+}
+.choose img{
+ background-color: #000;
+ margin: 20px 10px 0px 0px;
+ vertical-align:bottom;
+ border-radius: 30px;
+}
+.choose SELECT{
+    height: 30px;
+    width: 200px;
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 0px 0 0 65px;
+}
+.choose SELECT:focus{
+    outline: none;
+}
+.choose h3{
+    color: #fff;
+}
+.choose p{
+    color: #fff;
+    margin: 20px 0 15px 0;
+}
+.style1{
+    color:#ff0000;
+}
+.choose input{
+    margin: 0;
+}
+.choose textarea{
+    font-size: 12px;
+    padding: 5px;
+}
+.choose button{
+    display: block;
+    height: 30px;
+    width: 70px;
+    font-size: 18px;
+    margin: 25px 0px 0px 70px;
+    color: black;
+    
 }
 /*RWD*/
 @media screen and (max-width: 960px) {
@@ -291,7 +349,7 @@
         margin: 30px 0px 20px 50%;
     }
     .side-menu form input{
-        margin: 10px auto  30px auto;
+        margin: 10px auto  10px auto;
         position: relative;
     }
     #submit{
@@ -302,5 +360,13 @@
         margin: 10px auto  30px auto;
         position: relative;
     }
+    #上箭頭{
+        margin: 10px auto  10px auto;
+        position: relative;
+    }
+    .choose{
+        margin: 50px;
+    }
+    
 }
 

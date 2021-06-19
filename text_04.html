@@ -87,6 +87,8 @@
     <!--side-menu-->
     <input type="checkbox" name="" id="side-menu-switch">
     <div class="side-menu">
+        <button onclick="next1();" i class="fa fa-angle-up" id="上箭頭"></button> 
+
         <label for="side-menu-switch">
             <i class="fa fa-angle-left"></i>
         </label>
@@ -98,8 +100,33 @@
             <input type="file" id="side_file">
             <input type="submit" placeholder="確認" id="submit">
         </form>
+        <!---->
+        <div class="choose" id="choose"> 
 
-            <i class="fa fa-angle-down" id="下箭頭"></i>  
+            <h3>選擇使用工具</h3>
+
+            <img width=50px height=50px src="walk.png"  name="x1"> 
+            <SELECT onChange="document.x1.src=options[selectedIndex].value"> 
+                <option value="walk.png" alt="1">走路</option> 
+                <option value="bicycle.png" alt="2">自行車</option> 
+                <option value="car.png" alt="3">汽車</option> 
+                <option value="motorcycle.png" alt="4">機車</option>
+                <option value="bus.png" alt="5">公車</option>  
+            </SELECT>
+            
+            <p>日期：</p>
+            <input type="date" id="bookdate" placeholder="2014-09-18">
+            <br>
+            <p>備註(最多100字) : <span id = "t3_sp" class = "style1"></span></p>
+            <textarea id = "t3" cols="30" rows="10" limit="true" maxlength="100"></textarea>
+            <br>
+            <button>完成</button>
+        </div>
+        <button onclick="next();" i class="fa fa-angle-down" id="下箭頭"></button> 
+
+        
+        
+        
     </div>
 
 
