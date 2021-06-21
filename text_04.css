@@ -274,7 +274,7 @@
 }
 .choose SELECT{
     height: 30px;
-    width: 200px;
+    width: 180px;
     font-size: 18px;
     border-radius: 20px;
     padding: 0px 0 0 65px;
@@ -287,6 +287,7 @@
 }
 .choose p{
     color: #fff;
+    font-size: 18px;
     margin: 20px 0 15px 0;
 }
 .style1{
@@ -294,6 +295,7 @@
 }
 .choose input{
     margin: 0;
+    font-size: 14px;
 }
 .choose textarea{
     font-size: 12px;
@@ -364,8 +366,16 @@
         margin: 10px auto  10px auto;
         position: relative;
     }
-    .choose{
-        margin: 50px;
+    .choose,
+    .choose input,
+    .choose textarea,
+    .choose button,
+    .choose img,.choose h3{
+        display: none;
+    }
+    .choose p{
+        text-align: center;
+        font-size: 20px;
     }
     
 }

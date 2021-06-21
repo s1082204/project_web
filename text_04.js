@@ -17,6 +17,7 @@ function next1(){
     document.getElementById('上箭頭').style.display = 'none';
     document.getElementById('choose').style.display = 'none';
     document.getElementById('下箭頭').style.visibility = 'visible';
+    
     $('[limit="true"]').keyup(function(){
         var _max = $(this).attr('maxlength');
         var _total = $(this).val().length;
