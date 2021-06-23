@@ -241,7 +241,7 @@
     display: block;
     height: 30px;
     width: 70px;
-    font-size: 18px;
+    font-size: 13px;
     margin: 25px 0px 0px 100px;
     color: black;
 }
@@ -268,47 +268,59 @@
 }
 .choose img{
  background-color: #000;
- margin: 20px 10px 0px 0px;
+ margin: 20px 10px 10px 0px;
  vertical-align:bottom;
  border-radius: 30px;
+ width:60px;
+ height:60px;
 }
 .choose SELECT{
-    height: 30px;
-    width: 180px;
-    font-size: 18px;
+    height: 25px;
+    width: 140px;
+    font-size: 14px;
     border-radius: 20px;
-    padding: 0px 0 0 65px;
+    padding: 0px 0 0 50px;
+    margin: 10px;
+    border: none;
 }
 .choose SELECT:focus{
     outline: none;
 }
-.choose h3{
+.choose h2{
     color: #fff;
+    font-size: 20px;
 }
 .choose p{
     color: #fff;
     font-size: 18px;
-    margin: 20px 0 15px 0;
+    margin: 10px 0 20px 0;
 }
 .style1{
     color:#ff0000;
 }
 .choose input{
     margin: 0;
-    font-size: 14px;
+    font-size: 13px;
+    margin: 10px 0 20px 0;
+    width: 200px;
 }
 .choose textarea{
     font-size: 12px;
     padding: 5px;
+    border: none;
+}
+.choose textarea:focus{
+    outline: none;
 }
 .choose button{
     display: block;
     height: 30px;
     width: 70px;
-    font-size: 18px;
+    font-size: 13px;
     margin: 25px 0px 0px 70px;
+    padding: auto;
     color: black;
-    
+    border-radius: 30px;  
 }
 /*RWD*/
 @media screen and (max-width: 960px) {
@@ -366,17 +378,38 @@
         margin: 10px auto  10px auto;
         position: relative;
     }
-    .choose,
-    .choose input,
-    .choose textarea,
-    .choose button,
-    .choose img,.choose h3{
-        display: none;
-    }
-    .choose p{
+    
+    .choose h2{
         text-align: center;
         font-size: 20px;
     }
-    
+    .choose img{
+        margin: 10px 20px auto 50px;
+    }
+    .choose SELECT,
+    .choose SELECT:focus{
+        width: 50%;
+        height: 7%;
+        font-size: 15px;
+        padding: 0 0 0 20%;
+    }
+    .choose p{
+        text-align: center;
+        font-size: 18px;
+        margin: 20px 0 10px 0;
+    }
+    .choose input{
+        margin: 20px 0px 0px 50px ;
+        border-radius: 10px;
+        height: 7%;
+        padding:  0px 10px 0 10px ;
+        font-size: 13px;
+        border: none;
+    }
+    .choose textarea{
+        left: center;
+    }
+    .choose button{
+        text-align: center;
+    }
 }
-

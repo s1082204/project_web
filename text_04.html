@@ -71,7 +71,7 @@
             <input type="password" id="overlay-pw">
             <br>
             <button>登入</button>
-            <a href="#">註冊 / 忘記密碼</a>
+            <a href ="#">註冊 / 忘記密碼</a>
             <p>其他登入方式</p>
             
             <a href="#"><img src="facebook.png"></a>            
@@ -98,14 +98,14 @@
         <img src="點點.png" id="點點">
         <form>
             <input type="file" id="side_file">
-            <input type="submit" placeholder="確認" id="submit">
+            <input type="reset" id="submit">
         </form>
         <!---->
         <div class="choose" id="choose"> 
 
-            <h3>選擇使用工具</h3>
+            <h2>選擇使用工具</h2>
 
-            <img width=50px height=50px src="walk.png"  name="x1"> 
+            <img src="walk.png"  name="x1"> 
             <SELECT onChange="document.x1.src=options[selectedIndex].value"> 
                 <option value="walk.png" alt="1">走路</option> 
                 <option value="bicycle.png" alt="2">自行車</option> 
@@ -114,9 +114,8 @@
                 <option value="bus.png" alt="5">公車</option>  
             </SELECT>
             
-            <p>日期：</p>
+            <p>請選擇日期</p>
             <input type="date" id="bookdate" placeholder="2014-09-18">
-            <br>
             <p>備註(最多100字) : <span id = "t3_sp" class = "style1"></span></p>
             <textarea id = "t3" cols="30" rows="10" limit="true" maxlength="100"></textarea>
             <br>

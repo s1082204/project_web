@@ -16,7 +16,7 @@ function next1(){
     document.getElementById('submit').style.display = 'block';
     document.getElementById('上箭頭').style.display = 'none';
     document.getElementById('choose').style.display = 'none';
-    document.getElementById('下箭頭').style.visibility = 'visible';
+    document.getElementById('下箭頭').style.display = 'block';
     
     $('[limit="true"]').keyup(function(){
         var _max = $(this).attr('maxlength');
@@ -38,6 +38,10 @@ function next(){
     document.getElementById('submit').style.display = 'none';
     document.getElementById('上箭頭').style.display = 'block';
     document.getElementById('choose').style.display = 'block';
-    document.getElementById('下箭頭').style.visibility = 'hidden';
+    document.getElementById('下箭頭').style.display = 'none';
+}
+
+function login(){
+    
 }
 
