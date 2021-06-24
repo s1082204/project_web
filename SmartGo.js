@@ -5,6 +5,9 @@ $('#toggle').click(function() {
 $(document).ready(function(){
     document.getElementById('上箭頭').style.display = 'none';
     document.getElementById('choose').style.display = 'none';
+    document.getElementById('overlay_text2').style.display = 'none';
+    document.getElementById('overlay_text3').style.display = 'none';
+    
 });
 
 function next1(){
@@ -40,9 +43,21 @@ function next(){
     document.getElementById('choose').style.display = 'block';
     document.getElementById('下箭頭').style.display = 'none';
 }
-
+//overlay
 function login(){
-    
+    document.getElementById('overlay_text').style.display = 'none';
+    document.getElementById('overlay_text2').style.display = 'block';
+    document.getElementById('overlay_text3').style.display = 'none';
+}
+function onlogin(){
+    document.getElementById('overlay_text2').style.display = 'none';
+    document.getElementById('overlay_text').style.display = 'block';
+    document.getElementById('overlay_text3').style.display = 'none';
+}
+function forget(){
+    document.getElementById('overlay_text2').style.display = 'none';
+    document.getElementById('overlay_text').style.display = 'none';
+    document.getElementById('overlay_text3').style.display = 'block';
 }
  
 let newTimer =()=> {

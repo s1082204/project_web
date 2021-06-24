@@ -65,19 +65,48 @@
     <!--overlay-->
     <div class="overlay" id="overlay">
 
-        <div class="overlay_text">
+        <div class="overlay_text" id="overlay_text">
             <h1>會員登入</h1>
             <h3>請輸入帳號</h3>
             <input type="text" id="overlay-test">
             <h3>請輸入密碼</h3>
             <input type="password" id="overlay-pw">
             <br>
-            <button>登入</button>
-            <a href ="#">註冊 / 忘記密碼</a>
+            <button onclick="log();">登入</button>
+            <a onclick="login();">註冊</a>
+            <a>/</a>
+            <a onclick="forget();"> 忘記密碼</a>
             <p>其他登入方式</p>
             
             <a href="#"><img src="facebook.png"></a>            
             <a href="#"><img src="google.png"></a>
+            
+        </div>
+
+        <div class="overlay_text" id="overlay_text2">
+            <h1>會員註冊</h1>
+            <h3>請設定帳號</h3>
+            <input type="text" id="overlay-test">
+            <h3>請設定密碼</h3>
+            <input type="password" id="overlay-pw">
+            <br>
+            <h3>請輸入備用信箱</h3>
+            <input type="password" id="overlay-pw">
+            <br>
+            <button>確定註冊</button>
+            <a onclick="onlogin();">前往登入</a>
+            
+        </div>
+
+        <div class="overlay_text" id="overlay_text3">
+            <h1>忘記密碼</h1>
+            <h3>請輸入帳號</h3>
+            <input type="text" id="overlay-test">
+            <h3>請輸入備用信箱</h3>
+            <input type="password" id="overlay-pw">
+            <br>
+            <button>送出確認信</button>
+            <a onclick="onlogin();">返回登入頁</a>
             
         </div>
         
