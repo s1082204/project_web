@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="http://www.softwhy.com/" />
+<title>螞蟻部落</title>  
+<script type="text/javascript">
+    let newTimer =()=> {
+    let date = new Date();
+    let str = date.toLocaleDateString();
+    str += "  " + week();
+    str += "  " + date.toLocaleTimeString();
+    let odiv = document.getElementById("ant");
+    odiv.innerHTML = str;
+    setTimeout(newTimer, 1000);
+    }    
+    let week=()=> {
+    let d, day, x, s = " ";
+    x=["星期日", "星期一", "星期二","星期三", "星期四", "星期五","星期六"];
+    d = new Date();
+    day = d.getDay();
+    return (s += x[day]);
+    }
+
+    window.onload =()=>{
+    newTimer();
+    }
+</script>
+</head>
+<body>
+  <div id="ant"></div>
+</body>
+</html>
